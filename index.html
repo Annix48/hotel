@@ -5,42 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
+      <div class="container header__section">
       <a href="./index.html">
         <svg width="70" height="65">
           <use href="./img/svg/symbol-defs.svg#logo"></use>
         </svg>
       </a>
-      <ul>
-        <li>
-          <a> Home </a>
+      <nav class="header__nav">
+      <ul class="nav list">
+        <li class="nav__item">
+          <a class="nav__link link nav__link"> Home </a>
         </li>
-        <li>
-          <a> The hut </a>
+        <li class="nav__item">
+          <a class="nav__link link nav__link"> The hut </a>
         </li>
-        <li>
-          <a> The area </a>
+        <li class="nav__item">
+          <a class="nav__link link nav__link"> The area </a>
         </li>
-        <li>
-          <a> About us </a>
+        <li class="nav__item">
+          <a class="nav__link link nav__link"> About us </a>
         </li>
-        <li>
-          <a> Booking </a>
+        <li class="nav__item">
+          <a class="nav__link link nav__link"> Booking </a>
         </li>
-        <li>
-          <a> Faq </a>
+        <li class="nav__item">
+          <a class="nav__link link nav__link"> Faq </a>
         </li>
       </ul>
-<select>
-    <option style="background-image:url(images/lng_ru.png);" value="en" selected>En
-    <option value="de"> De</option>
-</select>
+      </nav>
+      <select>
+        <option
+          style="background-image: url(images/lng_ru.png)"
+          value="en"
+          selected
+        >
+          En
+        </option>
+        <option value="de">De</option>
+      </select>
       <div>
         <button type="button" data-modal-open>Book now</button>
       </div>
+</div>
     </header>
     <main>
       <section class="hero">
