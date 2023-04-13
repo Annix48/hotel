@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,324 +11,489 @@
       href="https://fonts.googleapis.com/css2?family=Mulish&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Roboto:wght@100;300;400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
+
   <body>
-    <header class="header">
-      <div class="container header__section">
-      <a href="./index.html">
-        <svg width="70" height="65">
-          <use href="./img/svg/symbol-defs.svg#logo"></use>
-        </svg>
-      </a>
-      <nav class="header__nav">
-      <ul class="nav list">
-        <li class="nav__item">
-          <a class="nav__link link nav__link"> Home </a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link link nav__link"> The hut </a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link link nav__link"> The area </a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link link nav__link"> About us </a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link link nav__link"> Booking </a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link link nav__link"> Faq </a>
-        </li>
-      </ul>
-      </nav>
-      <select>
-        <option
-          style="background-image: url(images/lng_ru.png)"
-          value="en"
-          selected
-        >
-          En
-        </option>
-        <option value="de">De</option>
-      </select>
-      <div>
-        <button type="button" data-modal-open>Book now</button>
-      </div>
-</div>
-    </header>
-    <main>
-      <section class="hero">
-        <h1>Find peace in the forest</h1>
-        <p>Come and stay in out hut hotel near Mariager Fjord in Denmark</p>
-
-        <button type="button" data-modal-open>Book now</button>
-      </section>
-
-      <section>
-        <h2>The Cabins</h2>
-        <p>
-          Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly, are
-          designed by architect Sigurd Larsen. They all have an open space with
-          a double bed, a double sofa bed, kitchen, separate toilet and an
-          outdoor shower. On the roof, surrounded by treetops, there is a
-          terrace, which is about nine meters above ground. The cottages are
-          built around tall, old trees that go through the entire cottage from
-          floor to ceiling.
-        </p>
-        <img
-          src="./img/mirrorhouse.jpg"
-          alt="mirror house"
-          width="370"
-          height="294"
-        />
-        <button type="button" data-modal-open>Read More</button>
-      </section>
-      <section>
-        <div>
-          <ul>
-            <li>
-              <img src="./img/bed.jpg" alt="bed" width="370" height="294" />
+  <!-- Header -->
+  <header class="header">
+    <div class="container-bg">
+      <div class="header__inner">
+        <a href="index.html" class="logo__link">
+          <svg width="70" height="65">
+            <use href="./images/svg/symbol-defs.svg#logo"></use>
+          </svg>
+        </a>
+        <nav class="nav">
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="index.html" class="menu__link menu__link_active">
+                Home
+              </a>
             </li>
-            <li>
-              <img src="./img/house.jpg" alt="house" width="370" height="294" />
+            <li class="menu__item">
+              <a href="thehut.html" class="menu__link">
+                the hut
+              </a>
             </li>
-            <li>
-              <img
-                src="./img/people in.jpg"
-                alt="people in house"
-                width="370"
-                height="294"
-              />
+            <li class="menu__item">
+              <a href="thearea.html" class="menu__link">
+                The area
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                booking
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="aboutus.html" class="menu__link">
+                about us
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="fag.html" class="menu__link">
+                faq
+              </a>
             </li>
           </ul>
+       
+        </nav>
+        <a href="#" class="order__link button">Book Now</a>
+        <div class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
         </div>
-      </section>
-      <section>
-        <h2>The Forest</h2>
-        <p>
-          Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly, are
-          designed by architect Sigurd Larsen. They all have an open space with
-          a double bed, a double sofa bed, kitchen, separate toilet and an
-          outdoor shower. On the roof, surrounded by treetops, there is a
-          terrace, which is about nine meters above ground. The cottages are
-          built around tall, old trees that go through the entire cottage from
-          floor to ceiling.
-        </p>
-        <button type="button" data-modal-open>Read More</button>
-      </section>
-
-      <section class="facilities">
-        <h2>Facilities</h2>
-        <ul>
-          <li>
-            <div>
-              <svg width="70" height="70">
-                <use href="./img/svg/symbol-defs.svg#fridge"></use>
-              </svg>
-            </div>
-            <p>Mini fridge</p>
+        <ul class="mobile-menu">
+          <li class="menu__item">
+            <a href="index.html" class="menu__link menu__link_active">
+              Home
+            </a>
           </li>
-          <li>
-            <div>
-              <svg width="70" height="70">
-                <use href="./img/svg/symbol-defs.svg#kitchen"></use>
-              </svg>
-            </div>
-
-            <p>Kitchenette</p>
+          <li class="menu__item">
+            <a href="thehut.html" class="menu__link">
+              the hut
+            </a>
           </li>
-          <li>
-            <div>
-              <svg width="70" height="70">
-                <use href="./img/svg/symbol-defs.svg#coffee"></use>
-              </svg>
-            </div>
-
-            <p>Coffee machine</p>
+          <li class="menu__item">
+            <a href="thearea.html" class="menu__link">
+              The area
+            </a>
           </li>
-          <li>
-            <div>
-              <svg width="70" height="70">
-                <use href="./img/svg/symbol-defs.svg#teapot"></use>
-              </svg>
-              <p>Electric tea kettle</p>
-            </div>
+          <li class="menu__item">
+            <a href="#" class="menu__link">
+              booking
+            </a>
           </li>
-          <li>
-            <div>
-              <svg width="70" height="70">
-                <use href="./img/svg/symbol-defs.svg#point"></use>
-              </svg>
-              <p>Parking</p>
-            </div>
+          <li class="menu__item">
+            <a href="aboutus.html" class="menu__link">
+              about us
+            </a>
           </li>
-          <li>
-            <div>
-              <svg width="70" height="70">
-                <use href="./img/svg/symbol-defs.svg#trees"></use>
-              </svg>
-              <p>Breathtaking views</p>
-            </div>
+          <li class="menu__item">
+            <a href="fag.html" class="menu__link">
+              faq
+            </a>
           </li>
-          <li>
-            <div>
-              <svg width="70" height="70">
-                <use href="./img/svg/symbol-defs.svg#temperature"></use>
-              </svg>
-              <p>Floor heating</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <svg width="70" height="70">
-                <use href="./img/svg/symbol-defs.svg#plug"></use>
-              </svg>
-              <p>230V</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <svg width="70" height="70">
-                <use href="./img/svg/symbol-defs.svg#wifi"></use>
-              </svg>
-              <p>Parking</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <svg width="70" height="70">
-                <use href="./img/svg/symbol-defs.svg#shower"></use>
-              </svg>
-              <p>Shower</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <svg width="70" height="70">
-                <use href="./img/svg/symbol-defs.svg#toilet"></use>
-              </svg>
-              <p>Flushing toilets</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <svg width="70" height="70">
-                <use href="./img/svg/symbol-defs.svg#towels"></use>
-              </svg>
-              <p>Bedding & towels</p>
-            </div>
+          <li class="menu__item">
+            <a href="#" class="order__link button">Book Now</a>
           </li>
         </ul>
-      </section>
-
-      <section>
-        <img src="./img/cabin.jpg" alt="cabin" width="370" height="294" />
-        <button type="button" data-modal-open>More about us</button>
-        <img
-          src="./img/view.jpg"
-          alt="view from the house"
-          width="370"
-          height="294"
-        />
-      </section>
-      <footer>
-        <h2>Stay in touch with us</h2>
-        <address>
-          <ul>
-            <li>
-              <a
-                href="https://goo.gl/maps/QhLGWU4MBas8EUK27"
-                target="_blank"
-                rel="noreferrer noopener"
-                >Vesterborg, Denmark</a
-              >
-            </li>
-            <li>
-              <a href="mailto:info@theglasshuts.com">info@theglasshuts.com</a>
-            </li>
-            <li>
-              <a href="tel:+123456789000">+123 456 789 000</a>
-            </li>
-          </ul>
-        </address>
-        <div>
-          <ul>
-            <li>
-              <a>
-                <svg width="20" height="20">
-                  <use href="./img/svg/symbol-defs.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li>
-              <a href="">
-                <svg width="20" height="20">
-                  <use href="./img/svg/symbol-defs.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li>
-              <a href="">
-                <svg width="20" height="20">
-                  <use href="./img/svg/symbol-defs.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <nav>
-          <div>
-            <h2>Newsletter</h2>
-            <ul>
-              <li>Email Adrdess</li>
-            </ul>
-            <p>
-              Sign up to our newsletter for special things and receive 10% off
-              your next order.
-            </p>
-
-            <ul>
-              <li>TERMS AND CONDITIONS</li>
-              <li>CENCELLATION POLICY</li>
-              <li>PRIVACY POLICY</li>
-            </ul>
-            <ul>
-              <li>
-                <a href="">
-                  <svg width="20" height="20">
-                    <use href="./img/svg/symbol-defs.svg#paypal"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <svg width="20" height="20">
-                    <use href="./img/svg/symbol-defs.svg#mastercard"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <svg width="20" height="20">
-                    <use href="./img/svg/symbol-defs.svg#visa"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <svg width="20" height="20">
-                    <use href="./img/svg/symbol-defs.svg#bank"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+      </div>
+    </div>
+  </header>
+  
+  
+  <!-- Main -->
+  <main class="main">
+    <section class="hero">
+      <div class="slider__container">
+        <div class="slider">
+          <div class="slider__item">
+            <img src="./images/hero/hero.jpg" alt="house" class="slider__img">
+            <div class="slider__info">
+              <h1 class="slider-title title">
+                Find peace in the Forest
+              </h1>
+              <p class="slider-text">
+                Come and stay in out hut hotel near Mariager Fjord in Denmark
+              </p>
+            </div>
           </div>
-        </nav>
-      </footer>
-    </main>
+          <div class="slider__item">
+            <img src="./images/hero/hero.jpg" alt="" class="slider__img">
+            <div class="slider__info">
+              <h1 class="slider-title title">
+                Find peace in the Forest2
+              </h1>
+              <p class="slider-text">
+                Come and stay in out hut hotel near Mariager Fjord in Denmark
+              </p>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img src="./images/hero/hero.jpg" alt="" class="slider__img">
+            <div class="slider__info">
+              <h1 class="slider-title title">
+                Find peace in the Forest3
+              </h1>
+              <p class="slider-text">
+                Come and stay in out hut hotel near Mariager Fjord in Denmark
+              </p>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img src="./images/hero/hero.jpg" alt="" class="slider__img">
+            <div class="slider__info">
+              <h1 class="slider-title title">
+                Find peace in the Forest4
+              </h1>
+              <p class="slider-text">
+                Come and stay in out hut hotel near Mariager Fjord in Denmark
+              </p>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img src="./images/hero/hero.jpg" alt="" class="slider__img">
+            <div class="slider__info">
+              <h1 class="slider-title title">
+                Find peace in the Forest5
+              </h1>
+              <p class="slider-text">
+                Come and stay in out hut hotel near Mariager Fjord in Denmark
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="hero__book">
+          <button class="hero__book-btn">
+            Book Now
+          </button>
+          <div class="hero__book-text">
+            <span>from</span>
+            <span class="hero__price">€3.200</span>
+            <span>per night</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Cabins -->
+    <section class="cabins">
+      <div class="cabins__top">
+        <div class="cabins__container">
+          <div class="cabins__inner">
+            <div class="cabins__info">
+              <h2 class="cabins-title section-title">
+                The Cabins
+              </h2>
+              <p class="cabins-text section-text">
+                Løvtag’s three exclusive and comfortable cabins,
+                Et, Ro and Ly, are designed by architect Sigurd Larsen.
+                They all have an open space with a double bed, a double sofa bed, kitchen,
+                separate toilet and an outdoor shower. On the roof, surrounded by treetops,
+                there is a terrace, which is about nine meters above ground.
+                The cottages are built around tall,
+                old trees that go through the entire cottage from floor to ceiling.
+              </p>
+              <a href="#" class="cabins__link">
+                Read More
+              </a>
+            </div>
+            <div class="cabins__pic">
+              <img src="./images/bed.jpg" alt="bed" class="cabins__img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cabins__bottom">
+        <div class="cabins__bottom-container">
+          <div class="cabins__video">
+            <img src="./images/cabins-01.jpg" alt="" class="cabins__video-pic">
+          </div>
+          <div class="cabins__video">
+            <img src="./images/cabins-02.jpg" alt="" class="cabins__video-pic">
+          </div>
+          <div class="cabins__video">
+            <img src="./images/cabins-03.jpg" alt="" class="cabins__video-pic">
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Forest -->
+    <section class="forest">
+      <div class="slider__container">
+        <div class="forest__inner">
+          <div class="forest__map">
+            <a target="_blank"
+              href="https://www.google.com/maps/place/8320+Moseg%C3%A5rd+Huse,+Danimarka/@56.0836652,10.2026013,15z/data=!3m1!4b1!4m5!3m4!1s0x464c4105fdfe0bcd:0x2c71f7791970b4c7!8m2!3d56.083654!4d10.2113561"
+              class="section__map-link">We Are Here</a>
+            <a target="_blank"
+              href="https://www.google.com/maps/place/8320+Moseg%C3%A5rd+Huse,+Danimarka/@56.0836652,10.2026013,15z/data=!3m1!4b1!4m5!3m4!1s0x464c4105fdfe0bcd:0x2c71f7791970b4c7!8m2!3d56.083654!4d10.2113561"
+              class="overlay"></a>
+          </div>
+          <div class="forest__info">
+            <h2 class="forest-title section-title">
+              The Forest
+            </h2>
+            <p class="forest-text section-text">
+              Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly, are designed by architect Sigurd Larsen.
+              They all have an open space with a double bed, a double sofa bed, kitchen, separate toilet and an outdoor
+              shower.
+              On the roof, surrounded by treetops, there is a terrace, which is about nine meters above ground.
+              The cottages are built around tall, old trees that go through the entire cottage from floor to ceiling.
+            </p>
+            <a href="#" class="forest__link">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Facilities -->
+    <section class="facilities">
+      <div class="facilities-container">
+        <h2 class="facilities-title">
+          Facilities
+        </h2>
+        <div class="facilities__inner">
+          <div class="facilities__item">
+<svg class="facilities__img">
+  <use href="./images/svg/symbol-defs.svg#fridge"></use>
+</svg>            <p class="facilities-name">
+              Mini fridge
+            </p>
+          </div>
+          <div class="facilities__item">
+<svg class="facilities__img">
+  <use href="./images/svg/symbol-defs.svg#kitchen"></use>
+</svg>            <p class="facilities-name">
+              Kitchenette
+            </p>
+          </div>
+          <div class="facilities__item">
+<svg class="facilities__img">
+  <use href="./images/svg/symbol-defs.svg#coffee"></use>
+</svg>            <p class="facilities-name">
+              Coffee machine
+            </p>
+          </div>
+          <div class="facilities__item">
+<svg class="facilities__img">
+  <use href="./images/svg/symbol-defs.svg#teapot"></use>
+</svg>            <p class="facilities-name">
+              Electric tea kettle
+            </p>
+          </div>
+          <div class="facilities__item">
+<svg class="facilities__img">
+  <use href="./images/svg/symbol-defs.svg#point"></use>
+</svg>            <p class="facilities-name">
+              Parking
+            </p>
+          </div>
+          <div class="facilities__item">
+<svg class="facilities__img">
+  <use href="./images/svg/symbol-defs.svg#trees"></use>
+</svg>            <p class="facilities-name">
+              Breathtaking views
+            </p>
+          </div>
+          <div class="facilities__item">
+            <svg class="facilities__img">
+              <use href="./images/svg/symbol-defs.svg#temperature"></use>
+            </svg>
+            <p class="facilities-name">
+              Floor heating
+            </p>
+          </div>
+          <div class="facilities__item">
+            <svg class="facilities__img">
+              <use href="./images/svg/symbol-defs.svg#plug"></use>
+            </svg>
+            <p class="facilities-name">
+              230V
+            </p>
+          </div>
+          <div class="facilities__item">
+            <svg class="facilities__img">
+              <use href="./images/svg/symbol-defs.svg#wifi"></use>
+            </svg>
+            <p class="facilities-name">
+              Parking
+            </p>
+          </div>
+          <div class="facilities__item">
+            <svg class="facilities__img">
+              <use href="./images/svg/symbol-defs.svg#shower"></use>
+            </svg>
+            <p class="facilities-name">
+              Shower
+            </p>
+          </div>
+          <div class="facilities__item">
+<svg class="facilities__img">
+  <use href="./images/svg/symbol-defs.svg#toilet"></use>
+</svg>            <p class="facilities-name">
+              Flushing toilets
+            </p>
+          </div>
+          <div class="facilities__item">
+<svg class="facilities__img">
+  <use href="./images/svg/symbol-defs.svg#towels"></use>
+</svg>            <p class="facilities-name">
+              Bedding & towels
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- <svg class="facilities__img">
+        <use href="./images/svg/symbol-defs.svg#towels"></use>
+      </svg> -->
+    </section>
+  
+    <!-- About -->
+    <div class="about-more">
+      <div class="slider__container">
+        <div class="about-more__inner">
+          <img src="./images/about-gallery/about-left.jpg" alt="" class="about-more__pic">
+          <img src="./images/about-gallery/about-right.jpg" alt="" class="about-more__pic">
+        </div>
+        <a href="aboutus.html" class="about-more__link">More about us</a>
+      </div>
+    </div>
+  
+    <!-- Contact -->
+    <section class="contact">
+      <div class="container">
+        <div class="contact__inner">
+          <div class="contact__info">
+            <h2 class="contact-title section-title">
+              Stay in touch with us
+            </h2>
+            <p class="contact-address contact-text">
+              Vesterborg, Denmark
+            </p>
+            <p class="contact-tel contact-text">
+              <a href="tel:+123 456 789 000" class="contact__link contact-text">
+                +123 456 789 000
+              </a>
+            </p>
+            <p class="contact-mail">
+              <a href="mailto:info@theglasshuts.com" class="contact__link contact-text">
+                info@theglasshuts.com
+              </a>
+            </p>
+            <div class="social">
+              <a href="#" class="social__item instagram">
+                <svg class="social__img">
+                  <use href="./images/svg/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+              <a href="#" class="social__item facebook">
+                <svg class="social__img">
+                  <use href="./images/svg/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+              <a href="#" class="social__item twitter">
+              <svg class="social__img">
+                <use href="./images/svg/symbol-defs.svg#twitter"></use>
+              </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- <svg class="social__img" >
+            <use href="./images/svg/symbol-defs.svg#instagram"></use>
+          </svg> -->
+          <div class="contact__book">
+            <img src="./images/contact-bg.jpg" alt="" class="contact__img">
+            <div class="contact__book-info">
+              <button class="contact__book-btn">
+                Book a hut
+              </button>
+              <div class="contact__book-text">
+                <span>from</span>
+                <span class="contact__price">€3.200</span>
+                <span>per night</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__left">
+          <p class="footer-title">
+            Newsletter
+          </p>
+          <form class="letter">
+            <input type="email" placeholder="Email Address" class="letter__inp">
+          </form>
+          <p class="footer-text">
+            Sign up to our newsletter for special things and receive 10% off your next order.
+          </p>
+          <p class="copyright">
+            &copy; 2021 The Glass Huts
+          </p>
+        </div>
+        <div class="footer__right">
+          <ul class="policies">
+            <li class="policy__item">
+              <a href="#" class="policy__link">
+                TERMS AND CONDITIONS
+              </a>
+            </li>
+            <li class="policy__item">
+              <a href="#" class="policy__link">
+                CENCELLATION POLICY
+              </a>
+            </li>
+            <li class="policy__item">
+              <a href="#" class="policy__link">
+                PRIVACY POLICY
+              </a>
+            </li>
+          </ul>
+          <div class="cards">
+            <svg class="card__img" >
+              <use href="./images/svg/symbol-defs.svg#paypal"></use>
+            </svg>
+            <svg class="card__img" >
+              <use href="./images/svg/symbol-defs.svg#visa"></use>
+            </svg>
+            <svg class="card__img">
+              <use href="./images/svg/symbol-defs.svg#mastercard"></use>
+            </svg>
+          <svg class="card__img" >
+            <use href="./images/svg/symbol-defs.svg#bank"></use>
+          </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <!-- Slick Slider -->
+  <script src="./js/slick.min.js"></script>
+  
+  <!-- Script -->
+  <script src="./js/app.js"></script>
   </body>
 </html>

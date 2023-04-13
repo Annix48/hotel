@@ -1,0 +1,57 @@
+.cabins {
+  padding: 150px 0;
+}
+.cabins__container {
+  max-width: 1408px;
+  margin: 0 auto;
+  padding-left: 147px;
+}
+.cabins__top {
+  margin-bottom: 150px;
+}
+.cabins__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.cabins-text {
+  max-width: 465px;
+  margin-bottom: 30px;
+}
+.cabins__link {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  text-underline-offset: 4px;
+  color: #5b6460;
+  transition: all 0.4s ease;
+}
+.cabins__link:hover {
+  text-decoration: none;
+  color: #000000;
+}
+.cabins__video-pic {
+  transition: all 0.4s ease;
+}
+.cabins__video-pic:hover {
+  transform: scale(1.1);
+}
+.cabins__video {
+  overflow: hidden;
+}
+.cabins__bottom-container {
+  max-width: 1364px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+}
+.cabins__video {
+  grid-column: span 2;
+}
+.cabins__video-pic {
+  width: 100%;
+}

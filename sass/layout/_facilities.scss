@@ -1,0 +1,42 @@
+.facilities {
+  background: #5b6460;
+  padding: 150px 0 126px 0;
+}
+.facilities-container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.facilities-title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 100px;
+}
+.facilities__inner {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 70px;
+}
+.facilities__item {
+  text-align: center;
+  grid-column: span 3;
+}
+.facilities__img {
+  margin-bottom: 20px;
+}
+.facilities-name {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  max-width: 144px;
+  margin: 0 auto;
+}

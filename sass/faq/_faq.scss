@@ -1,0 +1,82 @@
+.fag-content {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+.fag__inner {
+  max-width: 774px;
+}
+.fag-accordion {
+  width: 100%;
+  background: transparent;
+  border: 0.7px solid #5b6460;
+  padding: 21px 24px;
+  outline: none;
+  margin-bottom: 24px;
+  text-align: left;
+  position: relative;
+  transition: 0.3s ease-out;
+}
+.fag-accordion::after {
+  content: url(../images/icon/accordion-sign.svg);
+  position: absolute;
+  right: 24px;
+  top: 13px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+.fag__accordion-title {
+  font-family: Open Sans;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  color: #333333;
+  padding-top: 21px;
+}
+.fag__panel {
+  background: #e9ece0;
+  padding: 0 24px;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+.fag__panel:last-child {
+  margin-bottom: 0;
+}
+.fag__panel-title {
+  margin-bottom: 40px;
+}
+.fag__panel-text {
+  width: 317px;
+  font-family: Open Sans;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+.fag__panel-text:last-child {
+  margin-bottom: 0;
+  padding-bottom: 50px;
+}
+.accordion-active + div {
+  margin-bottom: 24px;
+}
+.fag-accordion:hover::after {
+  width: 34px;
+  height: 34px;
+  background: #e9ece0;
+  border-radius: 50%;
+}
+.accordion-active::after {
+  transform: rotate(-180deg);
+  width: 34px;
+  height: 34px;
+  background: #e9ece0;
+  border-radius: 50%;
+}

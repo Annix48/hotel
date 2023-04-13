@@ -1,0 +1,73 @@
+.contact {
+  background: #e5e5e5;
+  padding-top: 150px;
+  padding-bottom: 133px;
+}
+.contact__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.contact__info {
+  padding-bottom: 17px;
+}
+.contact-text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  text-decoration: none;
+}
+.contact-address {
+  margin-bottom: 20px;
+}
+.contact-mail {
+  margin-bottom: 50px;
+}
+.contact__book {
+  display: block;
+}
+.contact__book-info {
+  display: flex;
+  max-width: 386px;
+  height: 100px;
+}
+.contact__book-btn {
+  background: #5b6460;
+  border: none;
+  padding: 36px 77px;
+  font-family: DIN;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: all 0.4s ease;
+}
+.contact__book-btn:hover {
+  background: #808e88;
+}
+.contact__book-text {
+  font-family: DIN;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: #333333;
+  background: #e9ece0;
+  padding: 22px 31px 22px 29px;
+}
+.contact__book-text span:last-child {
+  padding-left: 12px;
+}
+.contact__price {
+  font-size: 20px;
+  line-height: 28px;
+  display: block;
+  font-weight: 400;
+}

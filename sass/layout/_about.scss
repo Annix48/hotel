@@ -1,0 +1,37 @@
+.about-more {
+  position: relative;
+}
+.about-more__inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.about-more__pic {
+  width: 100%;
+  object-fit: cover;
+  height: 559px;
+}
+.about-more__link {
+  position: absolute;
+  top: calc(50% - 78px);
+  left: calc(50% - 78px);
+  z-index: 33;
+  font-family: DIN;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #333333;
+  text-decoration: none;
+  background: #e9ece0;
+  border-radius: 100px;
+  padding: 67px 28px;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 2px 2px 3px 7px rgba(255, 255, 255, 0.08);
+}
+.about-more__link:hover {
+  background: #5b6460;
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

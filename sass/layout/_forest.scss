@@ -1,0 +1,117 @@
+.forest {
+  background: #e9ece0;
+}
+.forest__info {
+  padding: 79px 130px 150px 110px;
+}
+.forest__inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.forest__link {
+  font-family: Open Sans;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  transition: all 0.4s ease;
+  color: #5b6460;
+  text-underline-offset: 4px;
+}
+.forest__link:hover {
+  color: #000000;
+  text-decoration: none;
+}
+.forest-text {
+  margin-bottom: 30px;
+}
+.section__map-link {
+  z-index: 99;
+  font-family: DIN;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  max-width: 71px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  position: relative;
+  outline: none;
+  display: block;
+  border-radius: 50%;
+}
+.section__map-link::after {
+  content: "";
+  position: absolute;
+  top: -32px;
+  left: -13px;
+  background: #ffffff;
+  width: 96px;
+  height: 96px;
+  display: inline-block;
+  border-radius: 50%;
+  z-index: -1;
+  transition: all 2s ease-in-out;
+}
+.forest__map {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  height: 650px;
+}
+.overlay {
+  position: absolute;
+  transition: all 0.4s ease;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3e443e;
+  opacity: 0;
+  z-index: 4;
+}
+.forest__map:hover .overlay {
+  opacity: 0.4;
+}
+.forest__map:hover .section__map-link::after {
+  animation: pulse-animation 1600ms linear infinite;
+}
+/* Animation */
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.5);
+  }
+  40% {
+    box-shadow: 0 0 0 35px rgba(255, 255, 255, 0.15);
+  }
+  60% {
+    box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.25);
+  }
+  80% {
+    box-shadow: 0 0 0 45px rgba(255, 255, 255, 0.15);
+  }
+  100% {
+    box-shadow: 0 0 0 55px rgba(255, 255, 255, 0.2);
+  }
+}
+.forest__map-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 704px;
+  height: 650px;
+}
+.forest__map::after {
+  content: "";
+  position: absolute;
+  background: url(/images/map.jpg) no-repeat 0 center;
+  width: 100%;
+  height: 650px;
+  top: 0;
+  left: 0;
+}
