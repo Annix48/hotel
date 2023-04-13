@@ -2820,7 +2820,6 @@ textarea {
 }
 
 .fag-accordion::after {
-  content: url(../images/icon/accordion-sign.svg);
   position: absolute;
   right: 24px;
   top: 13px;
