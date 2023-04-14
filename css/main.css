@@ -654,19 +654,6 @@ textarea {
   height: 15px;
 }
 
-.section-slider .slick-arrow.slick-prev {
-  left: 0;
-  background: url("/images/svg/symbol-defs.svg#black-arrow") 0 0/100% no-repeat;
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-}
-
-.section-slider .slick-arrow.slick-next {
-  bottom: -50px;
-  left: 78px;
-  background: url("../images/icon/black-arrow.svg") 0 0/100% no-repeat;
-}
-
 /* Progressive */
 .slider__progressive-bar {
   display: -webkit-box;
